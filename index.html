@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WaterRefiner — Digital Publishing Portfolio of Md Shakil Mahamud</title>
+<meta name="description" content="WaterRefiner is the digital publishing portfolio of Md Shakil Mahamud — independent review and research websites in water treatment, home improvement, and food, built and operated since 2019.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16303F;
+  --slate:#5A6E77;
+  --paper:#FAFAF7;
+  --surface:#FFFFFF;
+  --green:#1F7A5C;
+  --green-deep:#17604A;
+  --green-soft:#E8F2EE;
+  --amber:#E8A13D;
+  --amber-soft:#FBF1DF;
+  --line:#E3E1D6;
+  --shadow:0 1px 2px rgba(22,48,63,.05),0 8px 22px rgba(22,48,63,.06);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  font-family:'Source Sans 3',sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.65;
+  font-size:16.5px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+::selection{background:var(--green);color:#fff}
+:focus-visible{outline:2px solid var(--green);outline-offset:3px;border-radius:2px}
+.mono{font-family:'IBM Plex Mono',monospace}
+.container{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Zilla Slab',serif;line-height:1.15}
+
+/* ============ header ============ */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(250,250,247,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:2px solid var(--ink);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{
+  font-family:'Zilla Slab',serif;font-weight:700;font-size:22px;
+  text-decoration:none;letter-spacing:-.2px;
+}
+.logo span{color:var(--green)}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+.nav-links a{
+  text-decoration:none;font-size:15px;font-weight:600;color:var(--slate);
+  transition:color .15s ease;
+}
+.nav-links a:hover{color:var(--ink)}
+.btn{
+  display:inline-block;background:var(--green);color:#fff!important;
+  padding:10px 20px;border-radius:6px;font-weight:600;font-size:15px;
+  text-decoration:none;transition:background .15s ease;
+}
+.btn:hover{background:var(--green-deep)}
+.btn.ghost{background:transparent;color:var(--green)!important;border:1.5px solid var(--green)}
+.btn.ghost:hover{background:var(--green-soft)}
+@media(max-width:760px){.nav-links li:not(:last-child){display:none}}
+
+/* ============ hero ============ */
+.hero{padding:84px 0 68px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .85fr;gap:60px;align-items:center}
+.eyebrow{
+  font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:2px;
+  text-transform:uppercase;color:var(--green);font-weight:500;
+}
+.hero h1{
+  font-size:clamp(36px,4.8vw,54px);font-weight:700;letter-spacing:-.6px;
+  margin:16px 0 20px;max-width:17ch;
+}
+.hero h1 em{font-style:normal;color:var(--green)}
+.hero p.lede{font-size:18px;color:var(--slate);max-width:52ch}
+.hero-ctas{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.trust-ticks{display:flex;gap:22px;margin-top:32px;flex-wrap:wrap}
+.tick{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--slate);font-weight:600}
+.tick svg{flex:none}
+
+/* --- credential card --- */
+.cred-card{
+  background:var(--surface);border:1.5px solid var(--ink);border-radius:12px;
+  box-shadow:var(--shadow);padding:30px;text-align:center;position:relative;
+}
+.cred-card::before{
+  content:"";position:absolute;inset:0 0 auto 0;height:7px;border-radius:10px 10px 0 0;
+  background:linear-gradient(90deg,var(--green) 60%,var(--amber) 60%);
+}
+.cred-card img{
+  width:154px;height:154px;border-radius:50%;object-fit:cover;
+  border:4px solid var(--amber-soft);outline:1.5px solid var(--line);
+}
+.cred-name{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  margin-top:18px;font-family:'Zilla Slab',serif;
+  font-weight:700;font-size:22px;
+}
+.badge{width:21px;height:21px;flex:none}
+.cred-role{color:var(--slate);font-size:15px;margin-top:3px}
+.cred-verify{
+  margin-top:14px;font-size:12.5px;color:var(--green-deep);font-weight:600;
+  background:var(--green-soft);border-radius:99px;padding:6px 14px;display:inline-block;
+}
+.cred-meta{display:flex;justify-content:center;gap:10px;margin-top:18px;flex-wrap:wrap}
+.chip{
+  font-family:'IBM Plex Mono',monospace;font-size:11.5px;
+  border:1px solid var(--line);border-radius:99px;padding:5px 12px;color:var(--slate);
+  background:var(--paper);
+}
+
+/* ============ stats band ============ */
+.stats{border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);background:var(--surface)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:28px 24px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:none}
+.stat b{
+  display:block;font-family:'Zilla Slab',serif;
+  font-weight:700;font-size:34px;color:var(--green);
+}
+.stat span{font-size:13.5px;color:var(--slate);font-weight:600}
+@media(max-width:760px){
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:none}
+  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+}
+
+/* ============ sections ============ */
+section{padding:84px 0 0}
+.sec-head{max-width:660px;margin-bottom:42px}
+.sec-head h2{font-size:clamp(27px,3.2vw,36px);font-weight:700;margin-top:12px}
+.sec-head p{color:var(--slate);margin-top:12px;font-size:17px}
+
+/* --- pillars --- */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pillar{
+  background:var(--surface);border:1.5px solid var(--line);border-radius:10px;
+  padding:26px;box-shadow:var(--shadow);border-top:3px solid var(--green);
+}
+.pillar .icon{
+  width:42px;height:42px;border-radius:8px;background:var(--amber-soft);
+  display:flex;align-items:center;justify-content:center;margin-bottom:16px;
+}
+.pillar h3{font-size:19px;font-weight:700}
+.pillar p{font-size:15px;color:var(--slate);margin-top:8px}
+@media(max-width:820px){.pillars{grid-template-columns:1fr}}
+
+/* --- timeline --- */
+.timeline{list-style:none;border-left:2px solid var(--line);margin-left:8px}
+.timeline li{position:relative;padding:0 0 32px 32px}
+.timeline li:last-child{padding-bottom:6px}
+.timeline li::before{
+  content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;
+  border-radius:50%;background:var(--surface);border:3px solid var(--green);
+}
+.timeline li.next::before{border-color:var(--amber)}
+.timeline .yr{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--green);font-weight:500}
+.timeline h3{font-size:19px;font-weight:700;margin-top:3px}
+.timeline p{font-size:15px;color:var(--slate);margin-top:5px;max-width:62ch}
+
+/* --- portfolio --- */
+.group{margin-bottom:38px}
+.group-title{display:flex;align-items:baseline;gap:12px;margin-bottom:16px;border-bottom:1.5px solid var(--line);padding-bottom:8px}
+.group-title h3{font-size:21px;font-weight:700}
+.group-title .count{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--amber);font-weight:500}
+.site-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.site-card{
+  background:var(--surface);border:1.5px solid var(--line);border-radius:10px;
+  padding:22px 24px;text-decoration:none;display:block;box-shadow:var(--shadow);
+  transition:transform .18s ease,border-color .18s ease;
+}
+.site-card:hover{transform:translateY(-3px);border-color:var(--green)}
+.site-card .domain{
+  font-family:'IBM Plex Mono',monospace;font-size:14.5px;font-weight:500;color:var(--ink);
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  border-bottom:1px dotted var(--line);padding-bottom:8px;
+}
+.site-card .domain svg{flex:none;opacity:.6;transition:opacity .18s ease}
+.site-card:hover .domain svg{opacity:1}
+.site-card p{font-size:14.5px;color:var(--slate);margin-top:10px}
+.site-card .tag{
+  display:inline-block;margin-top:14px;font-size:11.5px;font-weight:700;
+  letter-spacing:.6px;text-transform:uppercase;color:var(--green-deep);
+  background:var(--green-soft);border-radius:5px;padding:4px 10px;
+}
+.site-card.exited{background:var(--paper)}
+.site-card.exited .tag{color:#8A6A2F;background:var(--amber-soft)}
+@media(max-width:760px){.site-grid{grid-template-columns:1fr}}
+
+/* --- contact --- */
+.contact-wrap{
+  background:var(--ink);border-radius:14px;padding:54px;color:#E7EDEA;
+  display:grid;grid-template-columns:1fr 1fr;gap:48px;
+  border-bottom:6px solid var(--amber);
+}
+.contact-wrap h2{font-size:31px;font-weight:700;color:#fff}
+.contact-wrap p.blurb{color:#A7BCB8;margin-top:14px;font-size:16px;max-width:44ch}
+.contact-list{list-style:none;display:grid;gap:22px}
+.contact-list li{display:grid;gap:3px}
+.contact-list .label{
+  font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1.6px;
+  text-transform:uppercase;color:var(--amber);
+}
+.contact-list .value{font-size:16px;color:#fff;line-height:1.5}
+.contact-list a{color:#fff;text-decoration:none;border-bottom:1px solid var(--green)}
+.contact-list a:hover{color:#9BD9C4}
+@media(max-width:820px){.contact-wrap{grid-template-columns:1fr;padding:36px}}
+
+footer{padding:34px 0 44px}
+.foot{
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  font-size:13.5px;color:var(--slate);
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="container nav">
+    <a class="logo" href="#">Water<span>Refiner</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#story">Track record</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a class="btn" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<div class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Digital publishing portfolio · Est. 2019</span>
+      <h1>Independent review sites, built for the <em>long term.</em></h1>
+      <p class="lede">WaterRefiner is the portfolio of research-driven review websites founded and operated by Md Shakil Mahamud — covering water treatment, home improvement, and food. One owner, eleven active properties, seven years of organic growth.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="#portfolio">View the portfolio</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+      <div class="trust-ticks">
+        <span class="tick"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#1F7A5C"/><path d="M4.5 8.2l2.3 2.3 4.7-4.8" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>100% organic search traffic</span>
+        <span class="tick"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#1F7A5C"/><path d="M4.5 8.2l2.3 2.3 4.7-4.8" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>FTC affiliate disclosures on every site</span>
+        <span class="tick"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#1F7A5C"/><path d="M4.5 8.2l2.3 2.3 4.7-4.8" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>Ownership verifiable via DNS</span>
+      </div>
+    </div>
+
+    <!-- credential card -->
+    <div class="cred-card">
+      <img src="assets/profile.jpg" alt="Portrait of Md Shakil Mahamud" width="154" height="154">
+      <div class="cred-name">
+        Md Shakil Mahamud
+        <svg class="badge" viewBox="0 0 22 22" role="img" aria-label="Verified owner"><path d="M11 0l2.6 2.1 3.3-.5 1.2 3.1 3 1.6-.6 3.3L22 12l-1.5 2.4.6 3.3-3 1.6-1.2 3.1-3.3-.5L11 24l-2.6-2.1-3.3.5-1.2-3.1-3-1.6.6-3.3L0 12l1.5-2.4-.6-3.3 3-1.6L5.1 1.6l3.3.5L11 0z" transform="scale(.92)" fill="#1F7A5C"/><path d="M6.2 11.2l3 3 6-6.2" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <p class="cred-role">Founder &amp; Operator, WaterRefiner</p>
+      <span class="cred-verify">✓ Verified owner — domain ownership verifiable via DNS on request</span>
+      <div class="cred-meta">
+        <span class="chip">SINCE 2019</span>
+        <span class="chip">11 ACTIVE SITES</span>
+        <span class="chip">1 EXIT</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= STATS ================= -->
+<div class="stats">
+  <div class="container stats-grid">
+    <div class="stat"><b>7 yrs</b><span>Publishing in review niches</span></div>
+    <div class="stat"><b>11</b><span>Active web properties</span></div>
+    <div class="stat"><b>3</b><span>Content verticals</span></div>
+    <div class="stat"><b>1</b><span>Successful site exit (2021)</span></div>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">How the portfolio operates</span>
+      <h2>Depth over breadth, on every property.</h2>
+      <p>Rather than one site covering everything shallowly, each property answers a single subject in depth — researched, structured, and maintained by one operator.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M9 3a6 6 0 104.4 10.1l3.2 3.2 1.4-1.4-3.2-3.2A6 6 0 009 3z" stroke="#1F7A5C" stroke-width="1.7"/></svg></div>
+        <h3>Research-first content</h3>
+        <p>Buying guides, cost breakdowns, and comparisons built from product specifications, published data, and hands-on testing of the subject matter.</p>
+      </div>
+      <div class="pillar">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2l6.5 2.5v5c0 4-2.7 6.9-6.5 8.5C6.2 16.4 3.5 13.5 3.5 9.5v-5L10 2z" stroke="#1F7A5C" stroke-width="1.7"/><path d="M7 9.8l2.1 2.1 3.9-4" stroke="#1F7A5C" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Compliant by default</h3>
+        <p>Every property carries FTC affiliate disclosures, privacy policies, and clean, non-incentivized organic traffic — no paid ads, no coupon placements.</p>
+      </div>
+      <div class="pillar">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="6.5" r="3.5" stroke="#1F7A5C" stroke-width="1.7"/><path d="M3.5 17.5c.8-3.2 3.4-5 6.5-5s5.7 1.8 6.5 5" stroke="#1F7A5C" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>One accountable owner</h3>
+        <p>Every domain listed on this page is registered to and operated by Md Shakil Mahamud. Ownership can be demonstrated via DNS record or registrar documentation on request.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRACK RECORD ================= -->
+<section id="story">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Track record</span>
+      <h2>Seven years, one direction.</h2>
+    </div>
+    <ul class="timeline">
+      <li>
+        <span class="yr">2019</span>
+        <h3>waterfiltercast.com launched</h3>
+        <p>First property in the water treatment niche — reviews and buying guides for residential filtration systems, grown entirely on organic search.</p>
+      </li>
+      <li>
+        <span class="yr">AUG 2021</span>
+        <h3>waterfiltercast.com acquired by Popnet Media LLC</h3>
+        <p>Sold in a private transaction. The exit validated the publishing model and funded the current portfolio.</p>
+      </li>
+      <li>
+        <span class="yr">2021 — TODAY</span>
+        <h3>Portfolio build-out</h3>
+        <p>Reinvested into focused, single-topic properties across water treatment, home improvement, and food — each built to own its subject.</p>
+      </li>
+      <li class="next">
+        <span class="yr">NEXT</span>
+        <h3>WaterRefiner LLC</h3>
+        <p>Formation of a company entity to hold and operate the portfolio under one roof.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+<section id="portfolio">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">The portfolio</span>
+      <h2>Eleven active properties, three verticals.</h2>
+      <p>Every domain below is owned, written, and operated within the WaterRefiner portfolio.</p>
+    </div>
+
+    <div class="group">
+      <div class="group-title"><h3>Water treatment</h3><span class="count">08 PROPERTIES</span></div>
+      <div class="site-grid">
+        <a class="site-card" href="https://wholehouseironfilter.com" target="_blank" rel="noopener">
+          <span class="domain">wholehouseironfilter.com <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M4 11l7-7M6 4h5v5" stroke="#1F7A5C" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <p>Whole-house iron filtration systems for city and well water.</p>
+          <span class="tag">Iron &amp; well water</span>
+        </a>
+        <a class="site-card" href="https://bestwellwaterironfilter.com" target="_blank" rel="noopener">
+          <span class="domain">bestwellwaterironfilter.com <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M4 11l7-7M6 4h5v5" stroke="#1F7A5C" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <p>Iron filter selection and sizing for private well water.</p>
+          <span class="tag">Iron &amp; well water</span>
+        </a>
+        <a class="site-card" href="https://saltfreesoftenerguide.com" target="_blank" rel="noopener">
+          <span class="domain">saltfreesoftenerguide.com <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M4 11l7-7M6 4h5v5" stroke="#1F7A5C" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <p>Salt-free conditioners versus traditional water softeners.</p>
+          <span class="tag">Softening</span>
+        </a>
+        <a class="site-card" href="https://softwatersystemcost.com" target="_blank" rel="noopener">
+          <span class="domain">softwatersystemcost.com <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M4 11l7-7M6 4h5v5" stroke="#1F7A5C" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <p>Cost data, pricing guides, and 45 interactive calculators for soft water systems.</p>
+          <span class="tag">Softening</span>
+        </a>
+        <a class="site-card" href="https://waterfiltersoftenercombo.com" target="_blank" rel="noopener">
+          <span class="domain">waterfiltersoftenercombo.com <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M4 11l7-7M6 4h5v5" stroke="#1F7A5C" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <p>Combined filter and softener systems for well and city water.</p>
+          <span class="tag">Softening</span>
+        </a>
+        <a class="site-card" href="https://waterfilterforpfas.com" target="_blank" rel="noopener">
+          <span class="domain">waterfilterforpfas.com <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M4 11l7-7M6 4h5v5" stroke="#1F7A5C" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <p>PFAS and GenX contamination research and filtration guidance.</p>
+          <span class="tag">Contaminants</span>
+        </a>
+        <a class="site-card" href="https://leadremovingwaterfilter.com" target="_blank" rel="noopener">
+          <span class="domain">leadremovingwaterfilter.com <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M4 11l7-7M6 4h5v5" stroke="#1F7A5C" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <p>A full topical library on lead in drinking water and its removal.</p>
+          <span class="tag">Contaminants</span>
+        </a>
+        <a class="site-card" href="https://fsaeligiblewaterfilter.com" target="_blank" rel="noopener">
+          <span class="domain">fsaeligiblewaterfilter.com <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M4 11l7-7M6 4h5v5" stroke="#1F7A5C" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <p>FSA/HSA eligibility rules for water filtration purchases.</p>
+          <span class="tag">Buying guides</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="group-title"><h3>Home &amp; lifestyle</h3><span class="count">02 PROPERTIES</span></div>
+      <div class="site-grid">
+        <a class="site-card" href="https://soundproofly.com" target="_blank" rel="noopener">
+          <span class="domain">soundproofly.com <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M4 11l7-7M6 4h5v5" stroke="#1F7A5C" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <p>Soundproofing guides for homes and offices, plus quiet-appliance reviews.</p>
+          <span class="tag">Home improvement</span>
+        </a>
+        <a class="site-card" href="https://papasprimopizza.com" target="_blank" rel="noopener">
+          <span class="domain">papasprimopizza.com <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M4 11l7-7M6 4h5v5" stroke="#1F7A5C" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <p>Homemade pizza technique, pizza ovens, and outdoor cooking gear.</p>
+          <span class="tag">Food &amp; cooking</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="group-title"><h3>Local &amp; services</h3><span class="count">01 PROPERTY</span></div>
+      <div class="site-grid">
+        <a class="site-card" href="https://treeservicecincinnati.net" target="_blank" rel="noopener">
+          <span class="domain">treeservicecincinnati.net <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M4 11l7-7M6 4h5v5" stroke="#1F7A5C" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <p>Local lead generation for the Cincinnati tree service market.</p>
+          <span class="tag">Local SEO</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="group-title"><h3>Exited</h3><span class="count">01 PROPERTY</span></div>
+      <div class="site-grid">
+        <a class="site-card exited" href="https://waterfiltercast.com" target="_blank" rel="noopener">
+          <span class="domain">waterfiltercast.com <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M4 11l7-7M6 4h5v5" stroke="#8A6A2F" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <p>Founded 2019 — the portfolio's first property. Acquired by Popnet Media LLC in August 2021.</p>
+          <span class="tag">Sold · 2021</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-wrap">
+      <div>
+        <h2>Work with WaterRefiner</h2>
+        <p class="blurb">Affiliate program managers, brand partnerships, and acquisition inquiries are welcome. Ownership of any listed domain can be verified via DNS record or registrar documentation on request.</p>
+        <a class="btn" style="margin-top:26px" href="mailto:brithospoti@gmail.com">Email brithospoti@gmail.com</a>
+      </div>
+      <ul class="contact-list">
+        <li>
+          <span class="label">Operator</span>
+          <span class="value">Md Shakil Mahamud</span>
+        </li>
+        <li>
+          <span class="label">Operations base</span>
+          <span class="value">Dhaka, Bangladesh</span>
+        </li>
+        <li>
+          <span class="label">US mailing address</span>
+          <span class="value">1730 Mahan Ave<br>Bronx, NY 10461-4906<br>United States</span>
+        </li>
+        <li>
+          <span class="label">Phone</span>
+          <span class="value"><a href="tel:+13153882443">+1 (315) 388-2443</a></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot">
+    <span>© 2026 WaterRefiner · Md Shakil Mahamud</span>
+    <span>All properties independently owned &amp; operated · FTC-compliant affiliate disclosures on every site</span>
+  </div>
+</footer>
+
+</body>
+</html>

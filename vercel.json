@@ -1,0 +1,175 @@
+{
+  "redirects": [
+    {
+      "source": "/info/csf1",
+      "destination": "https://www.springwellwater.com/product/dual-systems/water-filter-salt-free-conditioner/?oid=4&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/csf1/",
+      "destination": "https://www.springwellwater.com/product/dual-systems/water-filter-salt-free-conditioner/?oid=4&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/css1",
+      "destination": "https://www.springwellwater.com/product/dual-systems/water-filter-salt-softener/?oid=10&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/css1/",
+      "destination": "https://www.springwellwater.com/product/dual-systems/water-filter-salt-softener/?oid=10&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/epic",
+      "destination": "https://www.epicwaterfilters.com/collections/pitchers/products/epic-pure-water-filter-pitcher?ref=PKETDGACXO",
+      "permanent": false
+    },
+    {
+      "source": "/info/epic/",
+      "destination": "https://www.epicwaterfilters.com/collections/pitchers/products/epic-pure-water-filter-pitcher?ref=PKETDGACXO",
+      "permanent": false
+    },
+    {
+      "source": "/info/lead-removal",
+      "destination": "https://www.springwellwater.com/product/water-filters/whole-house-lead-cyst-removal-system/?oid=7&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/lead-removal/",
+      "destination": "https://www.springwellwater.com/product/water-filters/whole-house-lead-cyst-removal-system/?oid=7&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/mws1",
+      "destination": "https://www.springwellwater.com/product/well-water/ultra-whole-house-well-water-filter-salt-based-system-combo/?oid=22&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/mws1/",
+      "destination": "https://www.springwellwater.com/product/well-water/ultra-whole-house-well-water-filter-salt-based-system-combo/?oid=22&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/springro",
+      "destination": "https://www.springwellwater.com/product/under-counter-filtration/reverse-osmosis/?oid=11&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/springro/",
+      "destination": "https://www.springwellwater.com/product/under-counter-filtration/reverse-osmosis/?oid=11&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/springwell",
+      "destination": "https://www.springwellwater.com/product/water-filters/whole-house-water-filters/?oid=1&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/springwell/",
+      "destination": "https://www.springwellwater.com/product/water-filters/whole-house-water-filters/?oid=1&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/springwell-2",
+      "destination": "https://www.springwellwater.com/product/water-filters/whole-house-water-filters/?oid=1&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/springwell-2/",
+      "destination": "https://www.springwellwater.com/product/water-filters/whole-house-water-filters/?oid=1&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/springwell-cf1",
+      "destination": "https://www.springwellwater.com/product/water-filters/whole-house-water-filters/?oid=1&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/springwell-cf1/",
+      "destination": "https://www.springwellwater.com/product/water-filters/whole-house-water-filters/?oid=1&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/springwell-futuresoft",
+      "destination": "https://www.springwellwater.com/product/water-softeners/salt-free-water-softeners/?oid=2&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/springwell-futuresoft/",
+      "destination": "https://www.springwellwater.com/product/water-softeners/salt-free-water-softeners/?oid=2&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/springwell-ss1",
+      "destination": "https://www.springwellwater.com/product/water-softeners/salt-water-softeners/?oid=9&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/springwell-ss1/",
+      "destination": "https://www.springwellwater.com/product/water-softeners/salt-water-softeners/?oid=9&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/springwell-well-water",
+      "destination": "https://www.springwellwater.com/product/well-water/whole-house-iron-filter/?oid=3&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/springwell-well-water/",
+      "destination": "https://www.springwellwater.com/product/well-water/whole-house-iron-filter/?oid=3&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/springwell-wsss1",
+      "destination": "https://www.springwellwater.com/product/well-water/well-water-filter-and-salt-based-water-softener/?oid=5&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/springwell-wsss1/",
+      "destination": "https://www.springwellwater.com/product/well-water/well-water-filter-and-salt-based-water-softener/?oid=5&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/sprw-uv",
+      "destination": "https://www.springwellwater.com/product/uv-systems/uv-water-purification-system/?oid=3&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/sprw-uv/",
+      "destination": "https://www.springwellwater.com/product/uv-systems/uv-water-purification-system/?oid=3&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/tannin-removal",
+      "destination": "https://www.springwellwater.com/product/water-filters/tannin-softener-system/?oid=20&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/tannin-removal/",
+      "destination": "https://www.springwellwater.com/product/water-filters/tannin-softener-system/?oid=20&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/ws1",
+      "destination": "https://www.springwellwater.com/product/well-water/whole-house-iron-filter/?oid=3&affid=40",
+      "permanent": false
+    },
+    {
+      "source": "/info/ws1/",
+      "destination": "https://www.springwellwater.com/product/well-water/whole-house-iron-filter/?oid=3&affid=40",
+      "permanent": false
+    }
+  ],
+  "headers": [
+    {
+      "source": "/info/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ]
+}
