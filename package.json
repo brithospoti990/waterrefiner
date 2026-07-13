@@ -1,0 +1,16 @@
+{
+  "name": "waterrefiner",
+  "version": "1.0.0",
+  "description": "Digital Publishing Portfolio of Md Shakil Mahamud",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": [],
+  "author": "Md Shakil Mahamud",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
